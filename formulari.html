@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: white;
+    }
+
+    h1 {
+      color: orangered;
+      text-align: center;
+    }
+
+    h5 {
+      text-align: center;
+    }
+
+    form {
+      text-align: center;
+
+    }
+
+    .primero {
+      width: 200px;
+    }
+
+    .segundo {
+      width: 300px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    textarea {
+      width: 250px;
+      height: 150px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>El meu primer formulari</h1>
+  <h5>Les teves dades personals:</h5>
+  <form>
+    <label for="nom">Nom:</label>
+    <input class=primero type="text" name="nom">
+    <label for="cognom">Cognom:</label>
+    <input class=primero type="text" name="cognom">
+    <br>
+    <br>
+    <label for="edat">Edat:</label>
+    <input class=segundo type="number" name="edat">
+  </form>
+  <h5>Marca els llenguatges de programació que vols cursar:</h5>
+  <form>
+    <input type="checkbox" id="selection1" name="1" value="html">
+    <label for="selection1"> HTML</label><br>
+    <input type="checkbox" id="selection2" name="2" value="css">
+    <label for="selection2"> CSS</label><br>
+    <input type="checkbox" id="selection3" name="3" value="xml">
+    <label for="selection3"> XML</label>
+  </form>
+  <h5>Selecciona el cicle formtiu que vols cursar:</h5>
+  <p>Selecciona el cicle:</p>
+  <form>
+    <input type="radio" id="asix" name="cicle" value="ASIX">
+    <label for="asix">ASIX</label><br>
+    <input type="radio" id="dam" name="cicle" value="DAM">
+    <label for="dam">DAM</label><br>
+    <input type="radio" id="daw" name="cicle" value="DAW">
+    <label for="daw">DAW</label>
+  </form>
+  <form>
+  <p>
+    Selecciona el curs:
+    <select name="curs">
+      <option>Primer</option>
+      <option>Segon</option>
+    </select>
+  </p>
+  </form>
+  <form action="resultat.html">
+    <p>
+      Observacions:<br>
+      <textarea name="mensaje"></textarea>
+    </p>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
